@@ -1,0 +1,30 @@
+# Video Link: https://www.youtube.com/watch?v=Tc1YIOAbyS0&list=PLD_RqipW0-9s-u1HXTglYV8Aam-5P3XLi&index=2
+
+# Create Amazon API Gateway
+# Create Model For Create User
+# Create Lambda get and put Method for User
+
+
+
+@ For create AWS API Gateway
+    * Action Resource
+    * Action Method i.e GET, PUT, POST
+
+    # Method Request
+        * Setting
+            Authorization: AWS_IAM
+            Request Validation: validate body/ query string parameters and header
+        * HTTP Request header
+            content-type
+
+@ For Testing GET
+    path {id} : 1004
+@ For Testing put
+    Headers {user} content-type: application/json
+    Request Body: 
+        {
+            "id": "",
+            "first_name": ""
+            "last_name": ""
+        }
+
